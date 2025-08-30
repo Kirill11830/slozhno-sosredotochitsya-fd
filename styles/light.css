@@ -7,7 +7,7 @@
   --backgroung-image: url(../images/cover-image-light.png);
 }
 
-.theme_light .decorative__element {
+:root.theme-light .decorative__element {
   display: none;
 }
 
@@ -24,12 +24,9 @@
     --btn-color:#353430;
     --backgroung-image: url(../images/cover-image-light.png);
   }
-  .decorative__element {
-    display: none;
-  }
   
   .header__theme-menu-button:hover {
-    border: 1px solid rgba(50, 49, 45, 0.40);
+    border: 0px solid rgba(50, 49, 45, 0.40);
   }
 }  
 
