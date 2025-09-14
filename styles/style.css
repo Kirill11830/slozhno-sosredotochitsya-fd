@@ -1,6 +1,6 @@
 .page {
   margin: 0 auto;
-  font-family: 'IBM Plex mono', sans-serif;
+  font-family: "IBM Plex mono", sans-serif;
   gap: var(--variable, 20px);
   font-weight: 400;
   line-height: 23.4px;
@@ -52,12 +52,8 @@
   border-bottom: 1px solid var(--btn-color);
 }
 
-.header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--btn-color);
-}
-
 .header__theme-menu-button:hover {
-  border: 1px solid rgba(255, 0, 112, 0.40);
+  border: 1px solid rgba(255, 0, 112, 0.4);
   cursor: pointer;
 }
 
@@ -134,27 +130,27 @@
   align-self: center;
 }
 
-.card-link {
+.card__link {
   text-decoration: none;
   text-shadow: 2px 2px 0 var(--accent-color);
 }
 
-.card-link:hover {
+.card__link:hover {
   border-bottom: 1px solid var(--text-color);
 }
 
-.card-link:focus {
-  outline: 1px solid var(--text-color);
+.card__link:focus {
+  outline: none;
 }
 
-.card-link:focus-visible {
+.card__link:focus-visible {
   outline: 1px solid var(--text-color);
 }
 
 .section__title {
   color: var(--btn-color);
   font-weight: 700;
-  line-height: 23.4px; 
+  line-height: 23.4px;
   font-size: var(--font-size);
   max-inline-size: 315px;
   margin-bottom: 20px;
@@ -163,13 +159,13 @@
 .card__title_type_thin {
   color: var(--btn-color);
   font-weight: 400;
-  line-height: 23.4px; 
+  line-height: 23.4px;
   font-size: var(--font-size);
   color: var(--sub-text-color);
 }
 
-.card__title{
-  font-family: "IBM Plex Mono",sans-serif;
+.card__title {
+  font-family: "IBM Plex Mono", sans-serif;
   font-weight: 700;
   font-style: Bold;
   line-height: 23.4px;
@@ -177,8 +173,8 @@
 }
 
 .card__text {
-  padding-block-start: 10px; 
-  padding-block-end: 20px; 
+  padding-block-start: 10px;
+  padding-block-end: 20px;
   font-size: var(--font-size);
   color: var(--text-color);
   font-family: IBM Plex Mono;
@@ -191,7 +187,7 @@
 .content-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding-block-start: 0; 
+  padding-block-start: 0;
   padding-block-end: 60px;
   margin: 0 20px;
 }
@@ -280,13 +276,13 @@
 
 .footer__title {
   text-shadow: 4px 4px 0 var(--accent-color);
-  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   color: var(--title-color);
   font-weight: 700;
   line-height: 82.5%;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .header {
     margin-bottom: 60px;
   }
@@ -308,13 +304,13 @@
   }
 
   .header__title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .content-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding-block-start: 0; 
+    padding-block-start: 0;
     padding-block-end: 60px;
     margin: 0 20px;
   }
@@ -322,12 +318,12 @@
   .section__title {
     max-inline-size: 236px;
     margin-bottom: 0px;
-  }  
+  }
 
   .section__cards-list_type_сoncentration {
-    display: flex; 
-    flex-direction: column; 
-    padding-block-start: 20px; 
+    display: flex;
+    flex-direction: column;
+    padding-block-start: 20px;
     gap: 0;
   }
 
@@ -346,7 +342,7 @@
     padding-block-end: 20px;
     font-size: var(--font-size);
     color: var(--text-color);
-    font-family: "IBM Plex Mono",sans-serif;
+    font-family: "IBM Plex Mono", sans-serif;
     font-weight: 400;
     font-style: Regular;
     line-height: 23.4px;
@@ -365,7 +361,7 @@
   }
 }
 
-@media (max-width:560px) {
+@media (max-width: 560px) {
   .header {
     padding: 10px;
     padding-block-end: 10px;
@@ -379,10 +375,10 @@
 
   .header__text {
     max-inline-size: 355px;
-  }  
+  }
 
   .card__title {
-    font-family: "IBM Plex Mono",sans-serif;
+    font-family: "IBM Plex Mono", sans-serif;
     font-weight: 700;
     font-style: Bold;
     line-height: 23.4px;
@@ -440,21 +436,21 @@
     display: flex;
     justify-content: center;
     margin-top: 42px;
-  } 
+  }
 
- .footer__title {
+  .footer__title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 
   .decorative__element {
     margin: 10px;
   }
-  
+
   .frame::before {
     margin: 10px;
   }
-  
- .frame::after {
+
+  .frame::after {
     block-size: 25px;
     margin: 10px;
   }
